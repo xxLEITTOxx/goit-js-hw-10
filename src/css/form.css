@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    font-family: Montserrat,sans-serif;
+}
+
+.form-container {
+    border-radius: 8px;
+padding: 24px;
+width: 408px;
+height: 296px;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 16px;
+background: #fff;
+box-shadow: 0 4px 12px #0000001a;
+padding: 24px;
+
+}
+
+.feedback-form {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+
+}
+
+input { 
+    border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 40px;
+margin-top: 8px;
+padding: 0 16px;
+}
+
+label {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+
+}
+
+textarea {
+    border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 80px;
+margin-top: 8px;
+padding: 10px 16px;
+resize: none;
+height: 80px;
+}
+
+button {
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border-radius: 8px;
+padding: 8px 16px;
+width: 95px;
+height: 40px;
+background: #4e75ff;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+border: none;
+}
+
+button:hover {
+    transition: background-color 0.5s;
+    background-color: #1d43cb;
+}

@@ -1,0 +1,57 @@
+body {
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #fff;
+  color: #434455;
+}
+img {
+  object-fit: cover;
+  width: 360px;
+  height: 200px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 1128px;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    z-index 0s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.modal img {
+  width: 1112px;
+  height: 640px;
+}
