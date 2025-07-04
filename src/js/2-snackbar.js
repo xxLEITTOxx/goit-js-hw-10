@@ -1,24 +1,25 @@
 import iziToast from "izitoast";
-
 import "izitoast/dist/css/iziToast.min.css";
+
 const myForm = document.querySelector(".form");
 const myDelay = document.querySelector('input[name="delay"]');
 const promiseFullfilled = document.querySelector('input[value="fulfilled"]');
-const promiseRejected = document.querySelector('input[value="rejected"]');
-const submit = document.querySelector('button[type="submit"]');
 
 myForm.addEventListener("submit", createPromise);
 
 function createPromise(event) {
   event.preventDefault();
+  const delay = Number(myDelay.value);
+  const isFulfilled = promiseFullfilled.checked;
+  myForm.reset();
   let myBestPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (promiseFullfilled.checked) {
-        resolve(Number(myDelay.value));
+      if (isFulfilled) {
+        resolve(delay);
       } else {
-        reject(Number(myDelay.value));
+        reject(delay);
       }
-    }, Number(myDelay.value));
+    }, delay);
   });
   myBestPromise
     .then((result) => {

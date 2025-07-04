@@ -1,0 +1,83 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+.form {
+  margin-left: 156px;
+  margin-top: 36px;
+}
+
+.delay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  height: 72px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.delay input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.checkbox-field {
+  position: relative;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  height: 64px;
+  width: 360px;
+  padding: 24px 48px 8px 48px;
+}
+.checkbox-field legend {
+  position: absolute;
+  top: -12px;
+  left: 28px;
+  border: 1px;
+  background: #fff;
+  padding: 0 8px;
+}
+
+.flex-checkboxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 48px;
+}
+.flex-checkboxes label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+
+  height: 32px;
+}
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  margin-top: 24px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover {
+  background: #6c8cff;
+}
