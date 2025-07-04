@@ -3,29 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-TIun3ptS.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-1Mt4gqrI.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/2-snackbar-DKXGAHUL.css">
   </head>
   <body>
     <form class="form">
-      <label>
+      <label class="delay">
         Delay (ms)
         <input type="number" name="delay" required />
       </label>
 
-      <fieldset>
+      <fieldset class="checkbox-field">
         <legend>State</legend>
-        <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
-        </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
+        <div class="flex-checkboxes">
+          <label class="fulfilled">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="rejected">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </div>
       </fieldset>
 
       <button type="submit">Create notification</button>
